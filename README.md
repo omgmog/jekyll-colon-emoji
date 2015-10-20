@@ -20,4 +20,8 @@ title:  "Welcome to Jekyll! :grin: :boom:"
 {% include emojify.html text=post.title %}
 ```
 
+![](http://i.imgur.com/W7IXFXM.png)
+
+becomes
+
 ![](http://i.imgur.com/WOua5bO.png)
