@@ -1,0 +1,13 @@
+{% assign cemojis = ":boom:|:grin:|:star:" | split:"|" %}
+{% assign emojis = "💥|😀|⭐️" | split:"|" %}
+
+{% if include.text %}
+  {% assign newtext = include.text %}
+  {% for cemoji in cemojis %}
+    {% assign newtext = newtext|replace:cemoji,emojis[forloop.index0] %}
+  {% endfor %}
+
+  {{ newtext }}
+{% else %}
+  Specify your text using the `text=""` parameter.
+{% endif %}
